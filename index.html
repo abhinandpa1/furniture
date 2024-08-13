@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furnituret</title>
+  <link rel="icon" type="img/png"
+    href="https://cdn2.iconfinder.com/data/icons/furniture-home-living-filled-outline/64/living_room-1024.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=Timmana&display=swap"
+    rel="stylesheet">
+   
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-style: italic;
+
+      font-family: "Pacifico", cursive;
+    }
+    
+    
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <img width="50px" height="50px" src="https://cdn-icons-png.flaticon.com/512/7870/7870959.png" alt="">
+        <a class="navbar-brand fw-bolder" href="#">Softiee</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Types
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Modern</a></li>
+                <li><a class="dropdown-item" href="#">Classic</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Most Purchased</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+
+          <div class="d-flex flex-sm-column text-center mt-3">
+            <i class="fa-solid fa-store mx-3 fs-3"></i>
+            <p>Store</p>
+          </div>
+          <div class="d-flex flex-sm-column text-center mt-3">
+            <i class="fa-solid fa-user mx-3 fs-3"></i>
+            <p>Profile</p>
+          </div>
+          <div class="d-flex flex-sm-column text-center mt-3">
+            <i class="fa-solid fa-heart mx-3 fs-3"></i>
+            <p>Wishlist</p>
+          </div>
+          <div class="d-flex flex-sm-column text-center mt-3">
+            <i class="fa-solid fa-cart-shopping mx-3 fs-3"></i>
+            <p>Cart</p>
+          </div>
+
+
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <header class="">
+    <ul class="nav nav-underline text-center">
+      <li class="nav-item m-2">
+        <a class="nav-link text-dark  " aria-current="page" href="#">Sofas</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Living</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Bedroom</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Dining & Kitchen</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Storage</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Study & Office</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Mattresses</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Decor</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Lamps & Lightings</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Furnishings</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">Outdoor</a>
+      </li>
+      <li class="nav-item  m-2">
+        <a class="nav-link text-dark " aria-current="page" href="#">WS value</a>
+      </li>
+
+
+    </ul>
+
+
+
+
+
+  </header>
+  <hr>
+<section>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img idth="100%" height="600px" src="https://wallpaperaccess.com/full/3460453.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <img width="100%" height="500px" src="https://wallpaperaccess.com/full/3460657.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <img width="100%" height="500px" src="https://wallpaperaccess.com/full/3683901.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+  </section>
+<section>
+    <h2 class="text-center fw-bold mt-5">Top Picks For You</h2>
+    <p class="text-center">Impressive Collection For Your Dream House</p>
+    <div class="row p-5 m-5 text-center">
+      <div class="col-3">
+        <img width="150px" height="150px"
+          src="https://th.bing.com/th/id/OIP.mRlSOVBtXik4TiZYJHmkXgHaHa?rs=1&pid=ImgDetMain" alt=""
+          class="rounded-circle">
+        <p class="fw-bolder">Loveseat</p>
+      </div>
+      <div class="col-3">
+        <img width="150px" height="150px"
+          src="https://th.bing.com/th/id/OIP.Y-TS8Mz2yusGPaOzMiaBSQAAAA?rs=1&pid=ImgDetMain" alt=""
+          class="rounded-circle">
+        <p class="fw-bolder">Mid-century Modern Sofa</p>
+      </div>
+      <div class="col-3">
+        <img width="150px" height="150px" src="https://www.homenish.com/wp-content/uploads/2019/10/daybed.jpg" alt=""
+          class="rounded-circle">
+        <p class="fw-bolder">Daybed</p>
+      </div>
+      <div class="col-3">
+        <img width="150px" height="150px"
+          src="https://www.homenish.com/wp-content/uploads/2019/10/low-seated-sofa-1.jpg" alt="" class="rounded-circle">
+        <p class="fw-bolder">Low-seated Sofa</p>
+
+      </div>
+
+    </div>
+
+    <div class="row px-5 mx-5  mt-5 text-center">
+      <div class="col-3">
+        <img width="150px" height="150px"
+          src="https://www.homenish.com/wp-content/uploads/2019/10/types-of-sofas-couches-2.jpg" alt=""
+          class="rounded-circle">
+        <p class="fw-bolder">Couch </p>
+      </div>
+      <div class="col-3">
+        <img width="150px" height="150px" src="https://www.homenish.com/wp-content/uploads/2019/10/chesterfield.jpg"
+          alt="" class="rounded-circle">
+        <p class="fw-bolder">Chesterfield</p>
+      </div>
+      <div class="col-3">
+        <img width="150px" height="150px" src="https://www.homenish.com/wp-content/uploads/2019/10/cabriole.jpg" alt=""
+          class="rounded-circle">
+        <p class="fw-bolder">Cabriole</p>
+      </div>
+      <div class="col-3">
+        <img width="150px" height="150px" src="https://www.homenish.com/wp-content/uploads/2019/10/Chaise-Lounge-.jpg"
+          alt="" class="rounded-circle">
+        <p class="fw-bolder">Chaise Lounge</p>
+
+      </div>
+
+    </div>
+
+
+
+
+
+  </section>
+ <section>
+    <h2 class=" fw-bold mt-5">Explore Essential Home Furniture</h2>
+    <p>Design Your Home Decor,Your Way</p>
+    <div class="row p-3 ">
+      <div class="col-3 ">
+        <div class="card" style="width: 18rem;">
+          <img width="200px" height="250px"
+            src="https://th.bing.com/th/id/OIP.BB8jqsXCBy0XGTJ6aprJ2QAAAA?rs=1&pid=ImgDetMain" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Sofa Sets</h5>
+            <p class="card-text text-start">From Rs:19000</p>
+            <a href="#" class=" btn btn-warning text-center">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img width="200px" height="250px"
+            src="https://th.bing.com/th/id/OIP.rU6YA3Y4tSxEoSH3lEDpKgAAAA?rs=1&pid=ImgDetMain" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Seating & Chairs</h5>
+            <p class="card-text text-start">From Rs:5999</p>
+            <a href="#" class=" btn btn-warning text-center">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img width="200px" height="250px"
+            src="https://th.bing.com/th/id/OIP.2neETlipHCAV8hYv36moLQAAAA?rs=1&pid=ImgDetMain" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Seater&DiningTable</h5>
+            <p class="card-text text-start">From Rs:14999</p>
+            <a href="#" class=" btn btn-warning text-center">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img width="200px" height="250px"
+            src="https://i.pinimg.com/originals/dd/0d/44/dd0d445d5a07e5b6f24bfea6085bc193.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Lamp&Lighting</h5>
+            <p class="card-text text-start">From Rs:2999</p>
+            <a href="#" class=" btn btn-warning text-center">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row p-3 ">
+      <div class="col-3 ">
+        <div class="card" style="width: 18rem;">
+          <img width="200px" height="250px"
+            src="https://th.bing.com/th/id/OIP.saJGEWYr3rfAlF3TIUlZSwAAAA?rs=1&pid=ImgDetMain" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Dressing Tables</h5>
+            <p class="card-text text-start">From Rs:3499</p>
+            <a href="#" class=" btn btn-warning text-center">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img width="200px" height="250px"
+            src="https://5.imimg.com/data5/HP/GX/MY-36684509/premium-tv-unit-500x500.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">TV Units&Stands</h5>
+            <p class="card-text text-start">From Rs:1499</p>
+            <a href="#" class=" btn btn-warning text-center">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img width="200px" height="250px"
+            src="https://i.pinimg.com/originals/a9/cc/83/a9cc835f592463265563b91a18dccbc5.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Wardrobes</h5>
+            <p class="card-text text-start">From Rs:9999</p>
+            <a href="#" class=" btn btn-warning text-center">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img width="200px" height="250px"
+            src="https://i.pinimg.com/originals/81/f9/bc/81f9bc4927e96fa0dcb81757a8cd3e68.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Home Decors</h5>
+            <p class="card-text text-start">From Rs:499</p>
+            <a href="#" class=" btn btn-warning text-center">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="text-center">
+    <h2 class=" fw-bold mt-3 text-center"> 50+Experience Store Across India</h2>
+    <div class="row text-center justify-content-center mt-5 mb-5">
+      <div class="col-2  ">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px" src="https://th.bing.com/th/id/OIP.X7-cheUVQEzwerfzq2QZxwAAAA?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Kochi, Kerala</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px"  src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2022-02/wooden%20street%20Bangalore%20Store%20(3).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Bengaluru, Karnataka</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 ">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px"  src="https://th.bing.com/th/id/OIP.l9cFKkjBlTJmK1uD_UuuKgAAAA?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Delhi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2  m-2 ">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px"  src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/inline-images/Mumbai%20Vashi%20New%20Store%20(1).jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Mumbai, Maharashtra</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 ">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px"  src="https://th.bing.com/th/id/R.0bd1e47d37dd3d9dc93395273eb36ba9?rik=kfypC6Rlkom0HQ&riu=http%3a%2f%2fbusinessuncover.com%2fwp-content%2fuploads%2f2024%2f02%2fWooden-Street-Opens-Its-97th-Store-in-Pune.jpg&ehk=J9FeaTNnQlB%2bVb7uBCmhWxpIGSqXzvTwzszlFS%2fXSZQ%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Pune, Maharashtra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center  justify-content-center mb-5 ">
+        <div class="col-2 ">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px" src="https://th.bing.com/th/id/OIP.X7-cheUVQEzwerfzq2QZxwAAAA?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Kochi, Kerala</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px"  src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2022-02/wooden%20street%20Bangalore%20Store%20(3).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Bengaluru, Karnataka</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 ">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px"  src="https://th.bing.com/th/id/OIP.l9cFKkjBlTJmK1uD_UuuKgAAAA?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Delhi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2  m-2 ">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px"  src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/inline-images/Mumbai%20Vashi%20New%20Store%20(1).jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Mumbai, Maharashtra</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 ">
+          <div class="card" style="width: 200px; height: 250px;">
+            <img width="200px" height="200px"  src="https://th.bing.com/th/id/R.0bd1e47d37dd3d9dc93395273eb36ba9?rik=kfypC6Rlkom0HQ&riu=http%3a%2f%2fbusinessuncover.com%2fwp-content%2fuploads%2f2024%2f02%2fWooden-Street-Opens-Its-97th-Store-in-Pune.jpg&ehk=J9FeaTNnQlB%2bVb7uBCmhWxpIGSqXzvTwzszlFS%2fXSZQ%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Pune, Maharashtra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+  </section>
+<section>
+    <h2 class="fw-bold text-center">Customer Reviews</h2>
+    <p class="text-center"> Happy Words Of Our Customers</p>
+   
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="card m-5" style="width: 18rem;">
+              <img src="https://th.bing.com/th/id/OIP.ViGlpoU2qdl9vGC1mxhpNgHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Olivia</h5>
+                <p class="card-text">The customr services is good</p>
+                <p>⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+            <div class="card m-5" style="width: 18rem;">
+              <img src="https://i.pinimg.com/originals/46/46/3f/46463f00c0db960a677c04f072238b82.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">jacob</h5>
+                <p class="card-text">my product last up to 3 years ,no problem with thier products</p>
+                <p>⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+            <div class="card m-5" style="width: 18rem;">
+              <img src="https://www.behindwoods.com/tamil-movies-cinema-news-16/images/mohanlals-take-on-the-current-situation-in-india-through-his-blog-photos-pictures-stills.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mohanlal</h5>
+                <p class="card-text">my family is Purchasing from last 5 yeras no problem with their services</p>
+                ⭐⭐⭐⭐⭐
+              </div>
+            </div>
+            <div class="card m-5" style="width: 18rem;">
+              <img src="https://th.bing.com/th/id/R.5965e9ec7706345e6cb94a21336c5977?rik=zkC27DnqMehBRg&riu=http%3a%2f%2f2.bp.blogspot.com%2f_7hlEA_X6tW0%2fTEKGelYHpMI%2fAAAAAAAAEUE%2fkm5EJ4V3BIg%2fs1600%2fMammootty%2bnew%2bwallpaper.jpg&ehk=RAnMyo1klLvGBA%2bYB8owDYPhZDzVWb60llKkeffoAiw%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mammooty</h5>
+                <p class="card-text">my friend lal recommended</p>
+                <p>⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img src="https://www.homenish.com/wp-content/uploads/2019/10/types-of-sofas-couches-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="https://www.homenish.com/wp-content/uploads/2019/10/types-of-sofas-couches-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="https://www.homenish.com/wp-content/uploads/2019/10/types-of-sofas-couches-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    
+          
+       
+    
+   </section><hr>
+<section>
+
+    <div class="row p-3">
+      <div class="col">
+        <h5 class="text-danger"> <i class="fa-solid fa-shop"></i>95+</h5>
+        <p>Experirence Store</p>
+        <p>Across India</p>
+      </div>
+      <div class="col">
+        <h5 class="text-danger"> <i class="fa-solid fa-truck"></i>350+</h5>
+        <p>Delivery Center</p>
+        <p>Across India</p>
+      </div>
+      <div class="col">
+        <h5 class="text-danger"> <i class="fa-regular fa-thumbs-up"></i>10 Lakh+</h5>
+        <p>Sattisfied</p>
+        <p>Customers</p>
+      </div>
+      <div class="col">
+        <h5 class="text-danger"> <i class="fa-solid fa-medal"></i>Lowest Price</h5>
+       <p>Guarantee</p>
+      </div>
+      <div class="col">
+        <h5 class="text-danger"> <i class="fa-solid fa-thumbs-up"></i>36 Months*</h5>
+        <p>Warranty</p>
+        
+      </div>
+    </div>
+
+   </section><hr>
+<section>
+    <marquee behavior="" direction=""><div class="row  m-5">
+      <div class="col-3">
+        <a href="https://www.idealhome.co.uk/"><img src="https://searchvectorlogo.com/wp-content/uploads/2020/11/ideal-home-logo-vector.png" alt="" width="150px" height="60px"></a>
+      </div>
+      <div class="col-3">
+        <a href="https://news.yahoo.com/"><img src="https://th.bing.com/th/id/OIP.9cffiwuT4MMZoW5qiTdKiQHaDS?rs=1&pid=ImgDetMain" alt=""  width="150px" height="60px"></a>
+      </div>
+      <div class="col-3">
+        <a href="https://www.facebook.com/"><img src="https://www.webdesignerdepot.com/imager/www_webdesignerdepot_com/cdn-origin/uploads/2015/07/featured_facebook_1336c5de08a8d89b59b098861a0a2c41.jpg" alt=""  width="150px" height="60px"></a>
+      </div>
+      <div class="col-3">
+        <a href="https://www.thehindubusinessline.com/"><img src="https://th.bing.com/th/id/OIP.j58CeGwC5sBHHf9bBHQ31AHaDt?rs=1&pid=ImgDetMain" alt=""  width="150px" height="60px"></a>
+      </div>
+      
+    </div>
+  </marquee>
+   </section><hr>
+<section>
+    <div class="container1 ">
+      <div class="row justify-content-center m-5">
+        <div class="col-2 text-center justify-content-justify">
+          <h4 class="text-start">Our Company</h4>
+
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">About Us</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Career</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Media</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Blog</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Customer Services</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Our Stores</a></h6>
+        </div>
+        <div class="col-2 text-center justify-content-justify">
+          <h4 class="text-start">Useful Links</h4>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Customer Furniture</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Exporters</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Buy in Bulk</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Hotel Furniture</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Delivery Location</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Sitemap</a></h6>
+        </div>
+        <div class="col-2 text-center justify-content-justify">
+          <h4 class="text-start">Shop By Room</h4>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Living Room</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Bedroom</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Dining Room</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Kids Room</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Modular Kitchen</a></h6>
+        </div>
+        <div class="col-2 text-center justify-content-justify">
+          <h4 class="text-start">Partners</h4>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Become a Franchise</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Sell on WoodenStreet</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Design Partner</a></h6>
+        </div>
+        <div class="col-2 text-center justify-content-justify">
+          <h4 class="text-start">Need Help</h4>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Help Center</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Contact Us</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Ask Experts</a></h6>
+          <h6><a class="nav-link text-dark font-weight-light text-monospace text-start" href="">Tarck Your Order</a></h6>
+        </div>
+      </div>
+    </div>
+   </section><hr>
+   <section>
+    <div class="row">
+      <div class="col">
+        <p><span class="fw-bolder">Delivery Across India :</span> Ahmedabad, Bangalore, Bhopal, Chandigarh, Chennai, Coimbatore, Faridabad, Ghaziabad, Goa, Gurgaon, Hyderabad, Indore, Jaipur and More Cities</p>
+      </div>
+      <div class="col p-2">
+        <p>We Accept</p>
+        <img src="https://logos-world.net/wp-content/uploads/2020/04/Visa-Emblem.jpg" alt="" width="60px" height="60px"><img src="https://cdn1.iconfinder.com/data/icons/credit-card-icons/512/maestro.png" alt=""  width="60px" height="60px"><img src="https://th.bing.com/th/id/OIP.FtvETY1E_WFX9yKpZ057BwHaE1?rs=1&pid=ImgDetMain" alt=""  width="60px" height="60px"><img src="https://th.bing.com/th/id/OIP.9gd9xMcF-p3JI5AGq2o2XQHaEk?rs=1&pid=ImgDetMain" alt=""  width="60px" height="60px"><img src="https://th.bing.com/th/id/R.fac07e9d4941860b1b1e0e17d6b3a81f?rik=BQ8cy7qu9Zvd7w&riu=http%3a%2f%2f3.bp.blogspot.com%2f-MYhh8bQ6MBA%2fU4MBs_aoFRI%2fAAAAAAAACNg%2fnOUU7Bbgu0A%2fw1200-h630-p-k-no-nu%2f001.jpg&ehk=jICcsMvcx%2b1P7U7Ep6BiHJJLWUQFtdMdPGYbm7DLEFk%3d&risl=&pid=ImgRaw&r=0" alt=""  width="60px" height="60px">
+      </div>
+      <div class="col">
+        <p>Download App:</p>
+        <a href="https://play.google.com/store/search?q=wooden+street&c=apps"><img src="https://res.cloudinary.com/ds57cmzxo/image/upload/f_auto,q_80/Webseite/grafiken/play-store-logo" alt="" width="120px" height="80px"></a>
+        <a href="https://apps.apple.com/in/app/wooden-street/id1162068644"><img src="https://digitopoly.files.wordpress.com/2016/06/app-store-logo.png" alt="" width="`00px" height="40px"></a>
+      </div>
+    </div>
+   </section>
+</body>
+</html>
